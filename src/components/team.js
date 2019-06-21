@@ -11,7 +11,7 @@ const Container = styled.div`
 `
 const HeaderText = styled(MainHeaderText)`
   color: ${colors.pink};
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 `
 const NameText = styled(Header)`
   margin: 0 0 5px 0;

@@ -36,6 +36,7 @@ const BackgroundColor = styled.section`
 const ContentContainer = styled.div`
   max-width: 960px;
   margin: 0 auto;
+  padding: 0 50px;
 `
 const WideContentContainer = styled.div`
   max-width: 1600px;
@@ -153,11 +154,11 @@ const IndexPage = () => (
     </BackgroundColor>
     <BackgroundColorMarbling color={colors.lightestPink}>
       <MarbleBgImage src={marble_3} />
-      <ContentContainer>
-        <ContentOverImage>
+      {/* <ContentContainer> */}
+        <CenterContentOverImage>
           <Company />
-        </ContentOverImage>
-      </ContentContainer>
+        </CenterContentOverImage>
+      {/* </CenterContentContainer> */}
     </BackgroundColorMarbling>
     <BackgroundColor color={colors.lightestPink}>
       <ContentContainer>

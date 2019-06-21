@@ -35,7 +35,7 @@ function SEO({ description, lang, meta, title }) {
       }}
       typography={typography}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
