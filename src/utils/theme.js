@@ -10,18 +10,32 @@ const colors = {
   red: "#F13F33",
 }
 
+const ContentContainer = styled.div`
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+`
+
+const FlexCenter = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
 const HeroHeaderText = styled.h1`
-  text-align: center;
-  color: ${colors.blue};
+  color: white;
+  font-size: 5rem;
+  line-height: 5rem;
+  margin-top: 0;
+  max-width: 70rem;
 `
 const HeroText = styled.h2`
-  color: ${colors.blue};
+  color: white;
   font-family: Merriweather;
   font-weight: 300;
   margin: 0;
   margin-bottom: 1.3rem;
-  text-align: center;
-  font-size: 1.4rem;
+  font-size: 1rem;
 `
 const MainHeaderText = styled.h1`
   color: ${colors.blue};
@@ -65,6 +79,8 @@ const Paragraph = styled.p`
 `
 export {
   colors,
+  ContentContainer,
+  FlexCenter,
   HeroHeaderText,
   HeroText,
   MainHeaderText,

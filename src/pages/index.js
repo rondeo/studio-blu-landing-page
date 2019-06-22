@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 import {
   colors,
+  ContentContainer,
   HeroHeaderText,
   HeroText,
   MainHeaderText,
@@ -15,7 +16,7 @@ import marble_2 from "../images/marble_2.svg"
 import marble_3 from "../images/marble_3.svg"
 
 import Layout from "../components/layout"
-import ProductImage1 from "../components/product-image-1"
+import Hero from "../components/hero"
 import ProductImage2 from "../components/product-image-2"
 import SEO from "../components/seo"
 import Button from "../components/button"
@@ -32,11 +33,6 @@ const BackgroundColorMarbling = styled.section`
 const BackgroundColor = styled.section`
   background: ${props => props.color};
   padding: 100px 0;
-`
-const ContentContainer = styled.div`
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 50px;
 `
 const WideContentContainer = styled.div`
   max-width: 1600px;
@@ -60,8 +56,7 @@ const ContentOverImage = styled.div`
   position: absolute;
   top: 20%;
   left: 20%;
-  ${'' /* transform: translate(-10%, -10%); */}
-
+  ${"" /* transform: translate(-10%, -10%); */}
 `
 
 const MarbleBgImage = styled.div`
@@ -88,47 +83,17 @@ const Text = styled.div`
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <BackgroundColorMarbling color={colors.lightestPink}>
-      <MarbleBgImage src={marble_1} />
-      <ContentContainer>
-        <CenterContentOverImage>
-          <FlexCenter>
-            <HeroHeaderText>
-              A marketplace built for creatives, by creatives
-            </HeroHeaderText>
-            <HeroText>
-              Studio Blu makes it easy to find and hire creative professionals
-              in your area
-            </HeroText>
-            <Button />
-          </FlexCenter>
-        </CenterContentOverImage>
-      </ContentContainer>
-    </BackgroundColorMarbling>
-    <BackgroundColor color={colors.lightestPink} height="1500px">
-      <WideContentContainer>
-        <Text>
-          <MainHeaderText>
-            Make your next creative project a reality
-          </MainHeaderText>
-          <MainText>
-            At Studio Blu, we believe hiring a creative professional should be
-            simple, fun, and stress-free.
-          </MainText>
-        </Text>
-        <ProductImage1 />
-      </WideContentContainer>
-      <WideContentContainer>
-        <ProductImage2 />
-        <Text>
-          <MainHeaderText>Browse high-quality portfolio imagery</MainHeaderText>
-          <MainText>
-            Gather inspiration and save your favorites. Every Studio Blu
-            portfolio is created by a trusted (local!) creative professional.
-          </MainText>
-        </Text>
-      </WideContentContainer>
-    </BackgroundColor>
+    <Hero />
+    {/* <WideContentContainer>
+      <ProductImage2 />
+      <Text>
+        <MainHeaderText>Browse high-quality portfolio imagery</MainHeaderText>
+        <MainText>
+          Gather inspiration and save your favorites. Every Studio Blu portfolio
+          is created by a trusted (local!) creative professional.
+        </MainText>
+      </Text>
+    </WideContentContainer>
     <BackgroundColorMarbling color={colors.blue} height="500px">
       <MarbleBgImage2 src={marble_2} />
       <ContentContainer>
@@ -154,19 +119,17 @@ const IndexPage = () => (
     </BackgroundColor>
     <BackgroundColorMarbling color={colors.lightestPink}>
       <MarbleBgImage src={marble_3} />
-      {/* <ContentContainer> */}
-        <CenterContentOverImage>
-          <Company />
-        </CenterContentOverImage>
-      {/* </CenterContentContainer> */}
+      <CenterContentOverImage>
+        <Company />
+      </CenterContentOverImage>
     </BackgroundColorMarbling>
     <BackgroundColor color={colors.lightestPink}>
       <ContentContainer>
-      <FlexCenter>
-        <Team />
+        <FlexCenter>
+          <Team />
         </FlexCenter>
       </ContentContainer>
-    </BackgroundColor>
+    </BackgroundColor> */}
   </Layout>
 )
 

@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { colors } from "../utils/theme"
 
 const ButtonStyle = styled.button`
-  background: ${colors.lightBlue};
+  background: ${colors.blue};
   border-radius: 3px;
   border: none;
   padding: 5px 20px;
@@ -12,7 +12,7 @@ const ButtonStyle = styled.button`
 `
 
 const ButtonText = styled(Link)`
-  color: ${colors.blue};
+  color: white;
   text-decoration: none;
   font-family: Open sans;
   font-size: 16px;

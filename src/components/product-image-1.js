@@ -15,8 +15,12 @@ import styled from "styled-components"
  */
 
 const StyledImage = styled(Img)`
-  width: 1200px;
-  margin-bottom: 0;
+  box-sizing: content-box;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 90vw;
+  display: block;
 `
 
 const ProductImage1 = () => (
